@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int n,a[4]={153,370,371,407};
+    while(scanf("%d",&n)&&(n!=0))
+    {
+        if(n>=1&&n<=4)
+        {
+            printf("%d\n",a[n-1]);
+        }
+        if(n>4)
+        {
+            printf("0\n");
+        }
+    }
+    return 0;
+}
