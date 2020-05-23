@@ -1,0 +1,63 @@
+#include<stdio.h>
+#include<string.h>
+#define MAX 10010
+long long s[MAX],isprime[MAX];
+void prime()
+{
+    long long i,k,j;
+    k=1;
+    memset(isprime,1,sizeof(isprime));
+    isprime[0]=0;
+    isprime[1]=0;
+    for(i=2; i<=MAX; i++)
+    {
+        if(isprime[i])
+        {
+            s[k++]=i;
+        }
+        for(j=i*2; j<=MAX; j+=i)
+        {
+            isprime[j]=0;
+        }
+    }
+}
+int main()
+{
+    int n,i,j,count,sum;
+    prime();
+    while(scanf("%d",&n)!=EOF)
+    {
+        if(n==0)
+        {
+            break;
+        }
+        count=0;
+        sum=0;
+        j=1;
+        i=0;
+        while(1)
+        {
+            while(sum<n&&s[i+1]<=n)
+            {
+                sum=sum+s[++i];
+            }
+            if(sum<n)
+            {
+                break;
+            }
+            else if(sum>n)
+            {
+                sum=sum-s[j];
+                j++;
+            }
+            else if(sum==n)
+            {
+                count++;
+                sum=sum-s[j];
+                j++;
+            }
+        }
+        printf("%d\n",count);
+    }
+    return 0;
+}
