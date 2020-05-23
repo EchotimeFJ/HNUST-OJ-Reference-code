@@ -5,6 +5,6 @@ I want to let my friends or schoolmates have a reference code when they are doin
 # The reason why it will exist
 Because although they can't solve it, they will also look for reference code. I'd better make a summary.😁
 # Some code details
-The code I submit will be placed according to my pass order, and readers can see a little improvement in my code level (if you are my loyal fan)🤔
+I will store most of the questions according to the number of the questions I have passed. Most of the questions were done when I was a freshman in my university. It should be helpful for you. Now you star⭐ me. You are an old and loyal fan.🤔
 # ===The end===
 Please give me a star⭐ to support my efforts.Thank you so much!😘
